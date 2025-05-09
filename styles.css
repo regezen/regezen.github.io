@@ -1,61 +1,73 @@
-/* Grundstil für den gesamten Body */
 body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: white;
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
-    text-align: center;
-  }
-  
-  .logo {
+    align-items: center;
+    gap: 40px;
+
+}
+
+
+
+.logo {
     font-family: "Avenir", sans-serif;
-    font-weight: 900; /* Black */
+    font-weight: 900;
     font-size: 48px;
-    letter-spacing: -0.06em; /* -6% Tracking */
-    margin: 2rem 0;
-  }
+    letter-spacing: -0.06em;
+    margin: 0;
+}
 
-
-  /* Logo oben */
-  header .logo {
-    font-size: 48px;
-    padding: 4rem 0;
-  }
-  
-  /* Menü in der Mitte */
-  .main-nav ul {
+.main-nav ul{
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center;
     gap: 20px;
-  }
-  
-.main-nav a {
-  font-family: 'IBM Plex Mono', monospace;
-  font-weight: 600; /* Semibold */
-  font-size: 20px;
-  line-height: 32px;
-  letter-spacing: 0.12em; /* 12% Tracking */
-  text-decoration: none;
-  color: black;
-  transition: color 0.3s;
+    margin: 0;
+
 }
-  
-  .main-nav a:hover {
-    color: #9a9a9a;
-  }
-  
-  /* Text unten */
-  .intro-text {
-    padding: 3rem 1rem;
-    font-size: 1rem;
-    max-width: 400px;
-    margin: 0 auto;
-    color: #444;
-  }
+.main-nav a {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+    
+}
+.main-nav a:hover{
+    color: rgb(98, 98, 98);
+}
+.main-nav a.active{
+    text-decoration: underline;
+}
+
+
+
+.intro-text {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.12em;
+    text-align: center;
+    color: black;
+    max-width: 1000px;
+
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
