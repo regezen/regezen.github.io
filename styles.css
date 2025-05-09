@@ -45,11 +45,11 @@ body {
     letter-spacing: 0.12em;
     text-decoration: none;
     color: black;
-    transition: color 0.3s;
+    transition: font-size 0.4s;
     
 }
 .main-nav a:hover{
-    color: rgb(98, 98, 98);
+    font-size: 18px;
 }
 .main-nav a.active{
     text-decoration: underline;
@@ -69,5 +69,37 @@ body {
 
     margin-left: 100px;
     margin-right: 100px;
+
+}
+
+
+
+/* ____________________________ contact.html___________________________ */
+
+
+
+
+.social-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+}
+
+
+.social-links a {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+    color: black;
+    transition: font-size 0.4s;
+}
+
+.social-links a:hover {
+    font-size: 18px;
 
 }
