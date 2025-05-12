@@ -103,3 +103,25 @@ body {
     font-size: 18px;
 
 }
+
+
+
+
+/* ________________________CV_____________________ */
+
+
+.download-cv {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+    color: black;
+    transition: color 0.4s;
+}
+
+
+
+.download-cv a:hover {
+    color: blue;
+}
