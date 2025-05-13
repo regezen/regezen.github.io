@@ -92,9 +92,9 @@ body {
 .social-links {
     list-style: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 12px;
+    gap: 24px;
     margin: 0;
 
 }
@@ -103,7 +103,7 @@ body {
 .social-links a {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 40px;
     letter-spacing: 0.12em;
     text-decoration: none;
     color: black;
@@ -111,8 +111,7 @@ body {
 }
 
 .social-links a:hover {
-    font-size: 18px;
-
+    font-size: 48px;
 }
 
 
@@ -153,4 +152,15 @@ body {
 
 
 
+
+ /* _________________________one year__________________- */
+
+.audio-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.audio-container h2 {
+    text-align: center;
+}
 
