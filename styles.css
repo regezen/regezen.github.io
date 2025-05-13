@@ -6,11 +6,21 @@ body {
     color: black;
 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
 
 }
+
+/* 🌚 Dark Mode */
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: #282828;
+      color: white;
+    }
+  
+}
+
+
 
 .content {
     display: flex;
@@ -20,15 +30,19 @@ body {
 
 }
 
-
+/* Ende der allgemeinen Seiteneinstellungen */
 
 .logo {
     font-family: "Avenir", sans-serif;
     font-weight: 900;
     font-size: 48px;
     letter-spacing: -0.06em;
-    margin: 0;
+    margin-top: 25vh;
+
 }
+
+
+/* _________________________________Navigation_________________________________ */
 
 .main-nav ul{
     list-style: none;
@@ -38,6 +52,8 @@ body {
     margin: 0;
 
 }
+
+
 .main-nav a {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 600;
@@ -48,6 +64,15 @@ body {
     transition: font-size 0.4s;
     
 }
+
+@media (prefers-color-scheme: dark) {
+    .main-nav a {
+      color: white;  /* ← sollte das überschreiben */
+    }
+  }
+
+
+
 .main-nav a:hover{
     font-size: 18px;
 }
@@ -55,7 +80,7 @@ body {
     text-decoration: underline;
 }
 
-
+/* _________________________________Text unten_________________________________ */
 
 .intro-text {
     font-family: "IBM Plex Mono", monospace;
@@ -64,7 +89,7 @@ body {
     line-height: 32px;
     letter-spacing: 0.12em;
     text-align: center;
-    color: black;
+    /* color: black; */
     max-width: 1000px;
 
     margin-left: 100px;
@@ -125,3 +150,21 @@ body {
 .download-cv a:hover {
     color: blue;
 }
+
+
+
+
+/* ___________________________________Responsives Verhalten mit @media__________________________ */
+
+@media (max-width: 800px) {
+    .main-nav ul {
+      display: flex; /* Menü ausblenden */
+      flex-direction: column;
+      text-align: center;
+    }
+
+}
+
+
+
+
