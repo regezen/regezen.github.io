@@ -1,0 +1,27 @@
+
+
+
+.social-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    margin: 0;
+}
+
+.social-links a {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+    color: black;
+    /* transition: font-size, 0.4s; */
+    transition: color 0.4s;
+}
+
+.social-links a:hover {
+    /* font-size: 48px; */
+    color: #A594F9;
+}

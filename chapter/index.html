@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>jonah.</title>
-  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../styles.css"/>
+  <link rel="stylesheet" href="chapter.css"/>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;600&display=swap" rel="stylesheet">
   <link rel="icon" href="../assets/favicons/favicon-light.png" media="(prefers-color-scheme: light)" />
   <!-- Icon für Darkmode -->
@@ -17,7 +18,7 @@
 <div class="content">
 
 
- <h1 class="logo">curriculum vitae.</h1>
+ <h1 class="main-title">curriculum vitae.</h1>
 
   <nav class="main-nav">
     <ul>
@@ -30,9 +31,14 @@
   </nav>
 
 
-  <p class="intro-text">
-    coming soon
-  </p>
+  <section id="cv-request">
+    <h2>Lebenslauf anfordern</h2>
+    <form id="cvForm">
+      <input type="email" name="email" placeholder="Deine E-Mail-Adresse" required>
+      <button type="submit">CV anfordern</button>
+    </form>
+    <p class="confirmation" style="display: none;">Danke! Ich sende dir meinen CV so bald wie möglich zu.</p>
+  </section>
 
   
 </div>
