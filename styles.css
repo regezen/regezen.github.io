@@ -91,7 +91,7 @@ body {
 
 
 
-/* ____________________________ contact.html___________________________ */
+/* ____________________________ contact______________________________________________ */
 
 
 
@@ -126,7 +126,7 @@ body {
 
 
 
-/* ________________________CV_____________________ */
+/* ________________________CV____________________________________________ */
 
 
 .download-cv {
@@ -144,15 +144,64 @@ body {
 .download-cv a:hover {
     color: blue;
 }
+/* __________________________________projects_______________________________________________ */
+
+.project-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.project-row {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+
+}
 
 
 
+
+
+
+.project-box-link {
+    color: black;
+    text-decoration: none;
+}
+
+
+.project-box {
+    width: 30vw;
+    height: 20vh;
+    border: 1.5px solid black;
+    background:#ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.4s;
+
+}
+
+.project-box h3 {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.12em;
+    text-align: center;
+    color: black;
+}
+
+.project-box:hover {
+    background: #A594F9;
+}
 
 /* ___________________________________Responsives Verhalten mit @media__________________________ */
 
 @media (max-width: 800px) {
     .main-nav ul {
-      display: flex; /* Menü ausblenden */
+      display: flex;
       flex-direction: column;
       text-align: center;
     }
@@ -162,7 +211,7 @@ body {
 
 
 
- /* _________________________one year__________________- */
+ /* _________________________one year__________________________________________- */
 
 .audio-container {
     justify-content: center;
