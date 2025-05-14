@@ -23,6 +23,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    padding-bottom: 100px ;
 
 }
 
@@ -205,6 +206,14 @@ body {
       flex-direction: column;
       text-align: center;
     }
+
+    .project-row {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    
 
 }
 
