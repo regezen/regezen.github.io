@@ -1,3 +1,7 @@
+* {
+    cursor: url('assets/cursor.svg') 0 0, auto;
+  }
+
 body {
     margin: 0;
     padding: 0;
@@ -53,16 +57,19 @@ body {
     letter-spacing: 0.12em;
     text-decoration: none;
     color: black;
-    transition: font-size 0.4s;
+    /* transition: font-size 0.4s; */
+    transition: color 0.4s;
     
 }
 
 
 .main-nav a:hover{
-    font-size: 18px;
+    /* font-size: 18px; */
+    color: #cdc7f4;
 }
 .main-nav a.active{
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    color: #A594F9;
 }
 
 /* _________________________________Text unten_________________________________ */
@@ -107,11 +114,13 @@ body {
     letter-spacing: 0.12em;
     text-decoration: none;
     color: black;
-    transition: font-size 0.4s;
+    /* transition: font-size, 0.4s; */
+    transition: color 0.4s;
 }
 
 .social-links a:hover {
-    font-size: 48px;
+    /* font-size: 48px; */
+    color: #A594F9;
 }
 
 
@@ -163,4 +172,5 @@ body {
 .audio-container h2 {
     text-align: center;
 }
+
 
