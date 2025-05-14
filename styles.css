@@ -213,7 +213,18 @@ body {
         gap: 12px;
     }
 
+    .project-box {
+        width: 75vw;
+        height: 20vh;
+        border: 1.5px solid black;
+        background:#ffffff;
     
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.4s;
+    
+    }
 
 }
 
