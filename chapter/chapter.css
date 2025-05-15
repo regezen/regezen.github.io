@@ -1,6 +1,21 @@
 
 
 
+.cv-request {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv-request form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+
 .cv-request h2 {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 300;
@@ -10,3 +25,44 @@
     text-align: center;
     color: black;
 }
+
+.cv-request input[type="email"] {
+    box-sizing: border-box;
+    width: 300px;
+    padding: 12px 24px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 0px;
+    text-align: center;
+}
+
+.cv-request button {
+    box-sizing: border-box;
+    width: 300px;
+    padding: 12px 24px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #cdc7f4;
+    color: black;
+    border: 1px solid black;
+    border-radius: 0px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.4s;
+}
+
+.cv-request button:hover {
+    background-color: #A594F9;
+  }
+
+
+  @media (max-width: 800px) {
+    .cv-request input[type="email"] {
+        width: 50vw;
+    }
+    .cv-request button {
+        width: 50vw;
+    }
+  }
